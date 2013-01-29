@@ -3,7 +3,7 @@
  *
  * 				Methods for dealing with arrays
  *
- * 		Ashwin Vaithianathan
+ * 		Ashwin Vaithianathan	
  */
 
 
@@ -17,7 +17,8 @@ public class arrays {
 	public static void main(String[] args) {
 		int[] nums = {3,6,4,3,2,1,5,6};
 
-		System.out.println(avg(nums));
+		System.out.println("Average: " + avg(nums));
+		System.out.println("Number of Threes: " + numthrees(nums));
 	}
 
 
@@ -51,4 +52,24 @@ public class arrays {
 	}
 	return sum;
 }
+
+	/**
+	 * numthrees
+	 * 		Finds the number of threes in the array
+	 *
+	 * @param nums - the array of numbers
+	 * @return the number of threes in the array
+	 */
+	public static int numthrees(int [] nums) {
+		int numberofthrees = 0;
+		for (int i = 0;i<nums.length;i++) {
+			if (nums[i] == 3) {
+				numberofthrees++;
+			}
+	}
+		return numberofthrees;
+
+	}
+
+
 }
